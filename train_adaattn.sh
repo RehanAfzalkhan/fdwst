@@ -1,0 +1,23 @@
+python train.py \
+--content_path /home/admin/AdaAttN/datasets/train_ridge_biocop_combo_sharp_above_400 \
+--style_path /home/admin/AdaAttN/datasets/train_ridge_biocop_combo_sharp_above_400 \
+--name AdaAttN_second_attn_try \
+--model adaattnattn \
+--dataset_mode unaligned \
+--no_dropout \
+--load_size 256 \
+--crop_size 256 \
+--image_encoder_path /home/admin/AdaAttN/checkpoints/vgg_normalised.pth \
+--gpu_ids 1 \
+--batch_size 8 \
+--n_epochs 20 \
+--n_epochs_decay 30 \
+--display_freq 1 \
+--display_port 8097 \
+--display_env AdaAttN \
+--lambda_local 0 \
+--lambda_global 10 \
+--lambda_content 200 \
+--lambda_blur 5 \
+--shallow_layer \
+--skip_connection_3 \

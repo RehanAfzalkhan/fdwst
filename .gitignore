@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+fdwst_env/
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Outputs & logs
+outputs/
+results/
+logs/
+*.log
+
+# Checkpoints / large weights
+checkpoints/
+*.pth
+*.pt
+
+# Data (keep only small samples if needed)
+data/*
+
+# BUT keep tiny readme markers if you use them
+!data/.gitkeep
+!outputs/.gitkeep
+!checkpoints/.gitkeep
+# Ignore large model and output files
+checkpoints/
+outputs/
+data/
+*.pth
+*.pt
+*.zip
+*.png
+*.jpg
+*.jpeg
+
+# Ignore model weight files
+models/model_resnet18_100.pt
+FDWST_resnet/model_resnet18_100.pt
+
+# Optional: ignore all .pt files (safer)
+*.pt
+
